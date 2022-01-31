@@ -40,7 +40,7 @@ jobs:
         run: |
           chmod +x gradlew
           ./gradlew bootBuildImage \
-            --imageName ghcr.io.io/polarbookshop/catalog-service:${{ env.APP_VERSION }} \
+            --imageName ghcr.io/baronnoraz/catalog-service:${{ env.APP_VERSION }} \
             --publishImage \
             -PregistryUrl=ghcr.io \
             -PregistryUsername=baronnoraz \
